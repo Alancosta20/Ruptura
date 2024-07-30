@@ -1,0 +1,60 @@
+body {
+    background: black;
+    background-image: url(fundo2.jpg);
+    background-size: cover; /* Para cobrir toda a área do body */
+    background-repeat: no-repeat; /* Para não repetir a imagem */
+    background-position: center; /* Para centralizar a imagem */
+
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.retangulo {
+    margin: 100px;
+    padding: 100px;
+    padding-top: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 20px;
+}
+
+
+.home {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.capitulos {
+    display: flex; /* Use flexbox para alinhar os botões lado a lado */
+    justify-content: center; /* Centraliza os elementos ao longo do eixo transversal (verticalmente) */
+    align-items: center; /* Ajusta a altura para centralizar verticalmente na tela (opcional) */
+    height: 30vh;
+    
+    
+}
+
+.capitulos button {
+    margin-right: 20px;  /* Espaçamento entre os botões (opcional) */
+    padding: 25px 60px;
+    background-color: rgba(0, 0, 0, 0.356);
+    font-size: 18px;
+    color: white;
+    border-radius: 15px ;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.164);
+    border: none;
+    transition: transform 0.3 ease white;
+}
+
+.capitulos button:hover {
+    transform: translateY(-5px);
+}
+
+.capitulos button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
